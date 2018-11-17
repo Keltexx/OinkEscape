@@ -9,7 +9,10 @@ public class PlayerMovement : MonoBehaviour {
     Rigidbody playerRigidbody;         // Reference to the player's rigidbody.
     int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
     float camRayLength = 100f;          // The length of the ray from the camera into the scene.
-
+	
+	DisparoPlayer PlayerDispara;
+	
+	
     void Awake()
     {
         // Create a layer mask for the floor layer.
@@ -18,6 +21,7 @@ public class PlayerMovement : MonoBehaviour {
         // Set up references.
         anim = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody>();
+		PlayerDispara = GetComponentInChildren<DisparoPlayer>();
     }
 
 
@@ -35,6 +39,12 @@ public class PlayerMovement : MonoBehaviour {
 
         // Animate the player.
         Animating(h, v);
+		
+		if(Input.GetMouseButton(1)){
+			PlayerDispara.Disparar = true;
+		}else{
+			PlayerDispara.Disparar = false;
+		}
     }
 
     void Move(float h, float v)
