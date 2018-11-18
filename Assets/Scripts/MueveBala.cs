@@ -19,5 +19,8 @@ public class MueveBala : MonoBehaviour {
 		if(target.gameObject.tag == "Enemigo"){
 			Destroy(gameObject);
 		}
+		if(target.gameObject.layer == 12){
+			Destroy(gameObject);
+		}
 	}
 }
