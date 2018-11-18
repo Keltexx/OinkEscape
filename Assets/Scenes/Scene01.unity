@@ -645,6 +645,10 @@ Prefab:
       propertyPath: damageImage
       value: 
       objectReference: {fileID: 563424102}
+    - target: {fileID: 4586391979436982, guid: 08a40e09b1c58e34c8f603150a8f6bcd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.167
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08a40e09b1c58e34c8f603150a8f6bcd, type: 2}
   m_IsPrefabAsset: 0
