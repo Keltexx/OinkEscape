@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour {
         // Animate the player.
         Animating(h, v);
 		
-		if(Input.GetMouseButton(1)){
+		if(Input.GetMouseButton(0)){
 			PlayerDispara.Disparar = true;
 		}else{
 			PlayerDispara.Disparar = false;
