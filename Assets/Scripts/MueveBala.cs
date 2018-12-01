@@ -8,19 +8,22 @@ public class MueveBala : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Destroy(gameObject,2f);
+		Destroy(gameObject,1f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		transform.Translate(Vector3.forward * Velocidad * Time.deltaTime);
 	}
-	void OnCollisionEnter(Collision target){
-		if(target.gameObject.tag == "Enemigo"){
+	void OnCollisionEnter(Collision collision){
+		Debug.Log("Colisiono");
+		if(collision.gameObject.tag == "Enemigo"){
 			Destroy(gameObject);
+			Debug.Log("adios");
 		}
-		if(target.gameObject.layer == 12){
+		if(collision.gameObject.layer == 11){
 			Destroy(gameObject);
+			Debug.Log("Hello");
 		}
 	}
 }
