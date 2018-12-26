@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -32,4 +33,9 @@ public class DisparoPlayer : MonoBehaviour {
 			}
 		}
 	}
+
+    internal void DisableEffects()
+    {
+        throw new NotImplementedException();
+    }
 }
