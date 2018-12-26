@@ -8,7 +8,8 @@ public class EnemyMovement : MonoBehaviour
     //PlayerHealth playerHealth;      // Reference to the player's health.
     //EnemyHealth enemyHealth;        // Reference to this enemy's health.
     NavMeshAgent nav;               // Reference to the nav mesh agent.
-
+    public float distancia = 1f;
+    Animator anim;
 
     void Awake()
     {
@@ -17,6 +18,7 @@ public class EnemyMovement : MonoBehaviour
         //playerHealth = player.GetComponent<PlayerHealth>();
         //enemyHealth = GetComponent<EnemyHealth>();
         nav = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
     }
 
 
@@ -25,14 +27,26 @@ public class EnemyMovement : MonoBehaviour
         // If the enemy and the player have health left...
         //if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
         //{
-            // ... set the destination of the nav mesh agent to the player.
-            nav.SetDestination(player.position);
-    //    }
-    //    // Otherwise...
-    //    else
-    //    {
-    //        // ... disable the nav mesh agent.
-    //        nav.enabled = false;
-    //    }
+        // ... set the destination of the nav mesh agent to the player.
+        nav.SetDestination(player.position);
+        //    }
+        //    // Otherwise...
+        //    else
+        //    {
+        //        // ... disable the nav mesh agent.
+        //        nav.enabled = false;
+        //    }
+
+
+        if (Vector3.Distance(transform.position, player.position) < distancia)
+        {
+            anim.SetBool("EstaCerca", true);
+            anim.SetBool("isWalking", false);
+        }
+        else
+        {
+            anim.SetBool("EstaCerca", false);
+            anim.SetBool("isWalking", true);
+        }
     }
 }
