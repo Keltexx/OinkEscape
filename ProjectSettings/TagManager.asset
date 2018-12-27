@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Shooteable
   - Enemigo
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - Floor
   - Objeto
   - Shootable
-  - 
-  - 
+  - Bala
+  - Hacha
   - 
   - 
   - 

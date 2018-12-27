@@ -8,10 +8,9 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth = 100;                   // The current health the enemy has.
 	public int dmg = 10;
 
-    bool isDead;                                // Whether the enemy is dead.
+    //bool isDead;                                // Whether the enemy is dead.
 	
 	void Start(){
-		
 	}
 	
 	void Update(){

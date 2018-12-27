@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23717231883178524}
   - component: {fileID: 135919623817980282}
   - component: {fileID: 114198807497160212}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 23692182317035376}
   - component: {fileID: 135873519126920446}
   - component: {fileID: 114146161816801932}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Bala
   m_TagString: Untagged
   m_Icon: {fileID: 0}
