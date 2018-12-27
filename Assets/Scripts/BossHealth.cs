@@ -4,8 +4,8 @@ using UnityEngine.AI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int startingHealth = 100;            // The amount of health the enemy starts the game with.
-    public int currentHealth = 100;                   // The current health the enemy has.
+    public int startingHealth = 800;            // The amount of health the enemy starts the game with.
+    public int currentHealth = 800;                   // The current health the enemy has.
 	public int dmg = 10;
 
     bool isDead;                                // Whether the enemy is dead.
