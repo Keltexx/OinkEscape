@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Tiempo : MonoBehaviour {
-	double cambioEscena = 5;
+	public double cambioEscena = 7f;
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +13,8 @@ public class Tiempo : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Time.deltaTime >= cambioEscena){
+		cambioEscena -= Time.deltaTime;
+		if(cambioEscena <= 0){
 			SceneManager.LoadScene ("Scene01");
 		}
 	}
