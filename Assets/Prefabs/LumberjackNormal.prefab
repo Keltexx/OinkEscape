@@ -1770,8 +1770,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f2dda997885964c90b6eafb0c11215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenAttacks: 0.5
-  attackDamage: 10
+  distanciaPerseguir: 15
+  distanciaAtaque: 1
+  tiempoAtaque: 2
+  perseguir: 0
+  tiempoD: 5
+  dmgEnemy: 10
 --- !u!114 &114581933655941576
 MonoBehaviour:
   m_ObjectHideFlags: 1
