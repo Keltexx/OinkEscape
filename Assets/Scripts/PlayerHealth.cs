@@ -30,6 +30,9 @@ public class PlayerHealth : MonoBehaviour
 			currentHealth -= dmg + 20;
 		}
 		healthSlider.value = currentHealth;
-
+		if(collision.gameObject.tag == "Llave"){
+			SceneManager.LoadScene ("Scene02");
+		}
 	}
+	
 }
