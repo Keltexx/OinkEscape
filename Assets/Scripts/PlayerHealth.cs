@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
 	public int dmg = 10;
 	public Slider healthSlider;
 	
+	public AudioClip sound = null;
+	
 
 
     void Start (){
@@ -26,8 +28,10 @@ public class PlayerHealth : MonoBehaviour
 	void OnCollisionEnter(Collision collision){
 		if(collision.gameObject.tag == "Enemigo"){
 			currentHealth -= dmg;
+			AudioSource.PlayClipAtPoint(sound,this.transform.position, 1);
 		}else if(collision.gameObject.tag == "Boss"){
 			currentHealth -= dmg + 20;
+			AudioSource.PlayClipAtPoint(sound,this.transform.position, 1);
 		}
 		healthSlider.value = currentHealth;
 		if(collision.gameObject.tag == "Llave"){
