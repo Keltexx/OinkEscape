@@ -492,8 +492,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 49}
-  m_SizeDelta: {x: 828.7, y: 355.1}
+  m_AnchoredPosition: {x: 19.9, y: 15}
+  m_SizeDelta: {x: 838.4, y: 423.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1482753452
 MonoBehaviour:
@@ -528,11 +528,11 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "En una granja del interior de Castell\xF3n viv\xEDa Och\xE1n, un cochinillo
-    valiente que no quer\xEDa correr la misma suerte que sus 9 hermanos.\nDe uno de
-    ellos se aprovech\xF3 hasta los andares, tres de ellos se convirtieron en jam\xF3n
-    y otros cinco fueron el plato estrella las Navidades pasadas.\nUn d\xEDa, Och\xE1n
+    valiente que no quer\xEDa correr la misma suerte que sus 9 hermanos.\n\nDe uno
+    de ellos se aprovech\xF3 hasta los andares, tres de ellos se convirtieron en jam\xF3n
+    y otros cinco fueron el plato estrella las Navidades pasadas.\n\nUn d\xEDa, Och\xE1n
     descubri\xF3 por casualidad que ten\xEDa el poder de escupir con una fuerza tan
-    grande que podr\xEDa sublevarse contra los granjeros y comenzar su hu\xEDda.\n\xBFLo
+    grande que podr\xEDa sublevarse contra los granjeros y comenzar su hu\xEDda.\n\n\xBFLo
     ayudas?"
 --- !u!222 &1482753453
 CanvasRenderer:
