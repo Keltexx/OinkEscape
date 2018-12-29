@@ -492,8 +492,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.9, y: 15}
-  m_SizeDelta: {x: 838.4, y: 423.2}
+  m_AnchoredPosition: {x: 0, y: -0.000019073}
+  m_SizeDelta: {x: 788.5, y: 518.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1482753452
 MonoBehaviour:
@@ -533,7 +533,7 @@ MonoBehaviour:
     y otros cinco fueron el plato estrella las Navidades pasadas.\n\nUn d\xEDa, Och\xE1n
     descubri\xF3 por casualidad que ten\xEDa el poder de escupir con una fuerza tan
     grande que podr\xEDa sublevarse contra los granjeros y comenzar su hu\xEDda.\n\n\xBFLo
-    ayudas?"
+    ayudas?\n\n\n(Sobrevive y derrota al jefe para encontrar la llave)"
 --- !u!222 &1482753453
 CanvasRenderer:
   m_ObjectHideFlags: 0
