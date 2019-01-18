@@ -3546,6 +3546,11 @@ Prefab:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1487422260}
+    - target: {fileID: 114287749108281918, guid: b19cf8d7ab2770c448fc314cee231fe9,
+        type: 2}
+      propertyPath: spawnTime
+      value: 5.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b19cf8d7ab2770c448fc314cee231fe9, type: 2}
   m_IsPrefabAsset: 0
