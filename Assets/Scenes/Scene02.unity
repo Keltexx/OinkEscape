@@ -937,7 +937,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 458058, guid: b62a06d8e5f0af046833b04abd1e57c0, type: 2}
       propertyPath: m_RootOrder
-      value: 34
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 458058, guid: b62a06d8e5f0af046833b04abd1e57c0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2275,7 +2275,8 @@ MonoBehaviour:
   currentHealth: 800
   dmg: 10
   muerto: 0
-  Llave: {fileID: 1542074520640754, guid: c2b7336618c254b47b99e1c259e997fc, type: 2}
+  Llave1: {fileID: 1542074520640754, guid: c2b7336618c254b47b99e1c259e997fc, type: 2}
+  Llave2: {fileID: 1659773984274140, guid: 7cb77bf2d51d848449f0bad86c5f3468, type: 2}
 --- !u!136 &755755922
 CapsuleCollider:
   m_ObjectHideFlags: 0

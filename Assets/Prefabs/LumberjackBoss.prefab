@@ -1766,6 +1766,9 @@ MonoBehaviour:
   startingHealth: 800
   currentHealth: 800
   dmg: 10
+  muerto: 0
+  Llave1: {fileID: 1542074520640754, guid: c2b7336618c254b47b99e1c259e997fc, type: 2}
+  Llave2: {fileID: 1659773984274140, guid: 7cb77bf2d51d848449f0bad86c5f3468, type: 2}
 --- !u!136 &136250303765280152
 CapsuleCollider:
   m_ObjectHideFlags: 1

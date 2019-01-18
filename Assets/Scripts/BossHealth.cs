@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class BossHealth : MonoBehaviour
 {
@@ -9,10 +10,11 @@ public class BossHealth : MonoBehaviour
     public int currentHealth = 800;                   // The current health the enemy has.
 	public int dmg = 10;
 	public bool muerto = false;
-	public GameObject Llave;
+	public GameObject Llave1;
+	public GameObject Llave2;
+	
 	
 	void Start(){
-		
 	}
 	
 	void Update(){
@@ -24,7 +26,12 @@ public class BossHealth : MonoBehaviour
 	
 	void Muere(){
 		Destroy(this.gameObject);
-		Instantiate(Llave, this.transform.position, this.transform.rotation);
+		if(SceneManager.GetActiveScene().name == "Scene01"){
+			Instantiate(Llave2, this.transform.position, this.transform.rotation);
+		}else{
+			Instantiate(Llave1, this.transform.position, this.transform.rotation);
+		}
+		
 	}
 	
 	

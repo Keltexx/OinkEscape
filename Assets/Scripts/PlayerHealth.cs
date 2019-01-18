@@ -34,9 +34,14 @@ public class PlayerHealth : MonoBehaviour
 			AudioSource.PlayClipAtPoint(sound,this.transform.position, 1);
 		}
 		healthSlider.value = currentHealth;
-		if(collision.gameObject.tag == "Llave"){
-			SceneManager.LoadScene ("Scene02");
+		if(collision.gameObject.tag == "Llave1"){
+			SceneManager.LoadScene ("Final");
+		}else{
+			if(collision.gameObject.tag == "Llave2"){
+				SceneManager.LoadScene ("Scene02");
+			}
 		}
+
 	}
 	
 }
