@@ -18,11 +18,13 @@ public class MueveBala : MonoBehaviour {
 	void OnCollisionEnter(Collision collision){
 		if(collision.gameObject.tag == "Enemigo"){
 			Destroy(gameObject);
-		}else if(collision.gameObject.tag == "Boss"){
+		}
+		if(collision.gameObject.tag == "Boss"){
 			Destroy(gameObject);
 		}
-		if(collision.gameObject.layer == 11){
+		if(collision.gameObject.tag == "Shooteable"){
 			Destroy(gameObject);
 		}
 	}
+
 }
