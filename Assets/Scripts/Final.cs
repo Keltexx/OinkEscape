@@ -8,13 +8,13 @@ public class Final : MonoBehaviour {
     Vector3 movement;                   // The vector to store the direction of the player's movement.
     Animator anim;                      // Reference to the animator component.
     Rigidbody playerRigidbody;         // Reference to the player's rigidbody.
-    int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
+   // int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
 	DisparoPlayer PlayerDispara;
 	
     void Awake()
     {
         // Create a layer mask for the floor layer.
-        floorMask = LayerMask.GetMask("Floor");
+       // floorMask = LayerMask.GetMask("Floor");
 
         // Set up references.
         anim = GetComponent<Animator>();
